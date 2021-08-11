@@ -1,4 +1,4 @@
 # Brian Ollenberger
 
 * [Resumé](resume.html)
-* [GitHub](https://github.com/bollenberger) @bollenberger
+* [GitHub](https://github.com/bollenberger)
