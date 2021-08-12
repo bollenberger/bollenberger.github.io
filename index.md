@@ -1,4 +1,4 @@
 # Brian Ollenberger
 
-* [Resumé](resume.html)
+* [Resumé](resume.html) [[PDF](resume.pdf)]
 * [GitHub](https://github.com/bollenberger)
