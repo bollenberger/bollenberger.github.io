@@ -5,7 +5,7 @@
     <link ref="alternate" href="https://brian.ollenberger.com/resume.pdf" type="application/pdf" title="PDF">
     
     <style>
-      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
       @media screen {
         html {
@@ -22,7 +22,9 @@
       
       body {
         font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
+        font-size: 15px;
+        color: #333;
+        line-height: 1.4;
       }
       
       a {
@@ -31,339 +33,318 @@
       }
       
       a:hover {
-        color: blue;
+        color: #2a5db0;
         text-decoration: underline;
       }
       
       h1 {
-        font-weight: bold;
-        font-size: 150%;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
+        font-weight: 700;
+        font-size: 180%;
         margin: 0;
-      }
-      
-      h2 {
-        font-weight: bold;
-        font-size: 120%;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        margin: 14px 0 4px;
-      }
-      
-      ul {
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        margin: 0 0 10px;
+        color: #1a1a1a;
+        letter-spacing: 0.02em;
       }
       
       header {
         text-align: center;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #2a5db0;
+        margin-bottom: 14px;
+      }
+
+      header .contact {
+        margin-top: 4px;
+        font-size: 90%;
+        color: #555;
+      }
+
+      header .contact span:not(:last-child)::after {
+        content: "·";
+        margin: 0 6px;
+        color: #999;
+      }
+      
+      h2 {
+        font-weight: 700;
+        font-size: 105%;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #2a5db0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 3px;
+        margin: 16px 0 8px;
+      }
+      
+      ul {
+        margin: 4px 0 10px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 3px;
       }
       
       .experience {
-        font-weight: bold;
+        margin-bottom: 14px;
       }
-      .experience .when {
-        float: left;
+      .experience .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1px;
       }
-      .experience .company {
-        float: left;
+      .experience .exp-header .company-title {
+        font-weight: 700;
+        font-size: 100%;
+        color: #1a1a1a;
       }
-      .experience .company:before {
-        content: ":";
-        margin-right: 5px;
-        text-decoration: none;
-        color: inherit;
+      .experience .exp-header .when {
+        font-size: 90%;
+        color: #666;
+        white-space: nowrap;
       }
-      .experience .title {
-        float: left;
-        clear: left;
-      }
-      .experience .position {
-        float: left;
-      }
-      .experience .position:before {
-        content: "–";
-        margin: 5px;
+      .experience .exp-role {
+        font-weight: 600;
+        font-size: 95%;
+        color: #555;
+        margin-bottom: 2px;
       }
       .experience ul {
-        clear: left;
         font-weight: normal;
+      }
+
+      .earlier-experience {
+        margin: 6px 0;
+      }
+      .earlier-experience .earlier-entry {
+        margin-bottom: 8px;
+      }
+      .earlier-experience .earlier-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .earlier-experience .earlier-header .earlier-role {
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .earlier-experience .earlier-header .earlier-when {
+        font-size: 90%;
+        color: #666;
+        white-space: nowrap;
+      }
+      .earlier-experience .earlier-detail {
+        font-weight: normal;
+        color: #555;
+        margin-left: 0;
+        margin-top: 1px;
       }
       
       .project {
-        margin: 5px 0;
+        margin: 6px 0;
       }
       .project .name {
-        font-weight: bold;
-        display: block;
+        font-weight: 700;
+        display: inline;
+        color: #1a1a1a;
+      }
+      .project .description {
+        display: inline;
+        color: #555;
+      }
+
+      .summary-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .summary-list li {
+        margin-bottom: 4px;
+      }
+
+      .skills-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .skills-list li {
+        margin-bottom: 3px;
+      }
+      .skills-list li strong {
+        color: #1a1a1a;
+      }
+
+      .education .school {
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+      .education .degree {
+        color: #555;
       }
     </style>
   
-    <title>Brian Ollenberger</title>
+    <title>Brian Ollenberger Resume</title>
   </head>
   <body>
     <header>
       <h1>Brian Ollenberger</h1>
-      <div class="address">24035 NE 14th St, Sammamish, WA, 98074</div>
-      <div class="phone"><a href="tel:+14082429745">(408) 242-9745</a></div>
-      <div class="email"><a rel="author" href="mailto:brian@ollenberger.com">brian@ollenberger.com</a></div>
+      <div class="contact">
+        <span><a href="tel:+14082429745">(408) 242-9745</a></span>
+        <span><a rel="author" href="mailto:brian@ollenberger.com">brian@ollenberger.com</a></span>
+        <span>Sammamish, WA</span>
+      </div>
     </header>
 
-    <h2>Mission</h2>
-    <p>To uncover the simplicity in our shared complex systems, driving practical benefits for customers and empowering colleagues to contribute effectively.</p>
-
     <h2>Summary</h2>
-    <ul class="summary">
-      <li>Experienced software engineer and technical leader with a proven track record of building scalable systems, mentoring teams, and driving cross-functional initiatives.</li>
-      <li>Initiative to apply elegant, quality solutions to practical problems.</li>
-      <li>Ability to span low-level technical details and higher-level strategy.</li>
-      <li>Focus on distributed systems, open standards, and protocols.</li>
+    <ul class="summary-list">
+      <li>Software engineering leader with 20 years of experience designing and building distributed systems, with recent focus on AI/ML infrastructure at Google and Meta.</li>
+      <li>Track record of founding and shipping products: launched Google Secure LDAP from scratch to tens of thousands of enterprise customers; built TPU provisioning infrastructure serving every major AI lab across 4 continents.</li>
+      <li>Deep systems background spanning kernel development, distributed consensus, large-scale data processing, and network protocols, combined with practical experience leading teams of 6–9 engineers.</li>
     </ul>
 
     <h2>Skills</h2>
-    <ul class="skills">
-      <li>Team mentorship, design and code review. Focus on reducing complexity and improving maintainability.</li>
-      <li>Cross-team engineering project planning and execution. Negotiating conflicting requirements, and solving for the customer need.</li>
-      <li>Strong proficiency in many programming languages and paradigms, including Java, Go, Python, Hack, Erlang, Ruby, C, C++, and JS, among many others.</li>
-      <li>Deep knowledge and understanding of Internet standards and protocols, including LDAP, OAuth, OpenID, HTTP, HTML, CSS, ASN.1, Protobuf, Thrift, Sun RPC, NFS, DNS, and TLS.</li>
-      <li>Web and Internet API integration, for example: Google Checkout, Paypal, Payflow, Stripe, Zendesk, TripIt, Instagram, Facebook, and Sabre.</li>
-      <li>Relational database development and administration, including PostgreSQL, MySQL, Redis, Mongo, along with multiple proprietary systems.</li>
-      <li>Network and cryptography programming, including TCP/IP, TLS, routing protocols, and peer-to-peer clustering protocols.</li>
-      <li>UNIX systems programming and administration, with particular strength in Linux, FreeBSD, and Solaris, including Solaris kernel module development.</li>
+    <ul class="skills-list">
+      <li><strong>Distributed systems:</strong> consensus protocols, replication, sharding, CRDTs, distributed hash tables, long-running orchestration, and asynchronous provisioning workflows.</li>
+      <li><strong>ML infrastructure:</strong> model metadata management, training and serving pipeline integration, model deployment and canarying, AI accelerator provisioning.</li>
+      <li><strong>Leadership:</strong> mentorship, design and code review, cross-team project planning, negotiating conflicting requirements across organizations.</li>
+      <li><strong>Languages:</strong> Java, Go, Python, C, C++, Erlang, and others.</li>
+      <li><strong>Protocols:</strong> gRPC/Protobuf, Thrift, HTTP, TLS, LDAP, OAuth, DNS.</li>
     </ul>
 
     <h2>Experience</h2>
     <div class="experience">
-      <span class="when">September 2024 to Present</span> <span class="company"><a href="https://coinbase.com" rel="nofollow">Coinbase</a></span>
-      <span class="title">Software Engineering Lead</span> <span class="position">Prime Broker</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://coinbase.com" rel="nofollow">Coinbase</a> – Prime Broker</span>
+        <span class="when">September 2024 – Present</span>
+      </div>
+      <div class="exp-role">Staff Software Engineer</div>
       <ul>
-        <li>Lead a team of 8 engineers owning federated product and infrastructure for Institutional APIs and administration tools.</li>
-        <li>Drove API initiatives across 12 subteams.</li>
-        <li>Lead the design and development of a novel indexing system for cross-organization financial data.</li>
-        <li>Supported customers directly with bespoke and legacy financial integrations, including REST, FIX, and PrivateLink. Expanded connectivity and authentication options while reducing operational complexity.</li>
-        <li>Automated all manual certificate signing and renewal, eliminating the team cost and opportunity for error.</li>
-        <li>Migrated all administration workflows from a bespoke solution to a company-wide standard solution, solving for maintenance cost and critical security requirements simultaneously.</li>
-        <li>Mentored team members, reviewed design and code for the team and across the broader organization.</li>
+        <li>Lead a team of 8 engineers owning federated product and infrastructure for Institutional APIs and administration tools serving thousands of customers, including every major crypto ETF, handling approximately 1 billion requests per month.</li>
+        <li>Identified and drove consolidation of duplicated Institutional FIX trading infrastructure owned by a neighboring team, over initial resistance from stakeholders who preferred independent systems. Addressed concerns by designing multi-tenant configuration support, resulting in a simpler system with fewer resources and half the maintenance toil.</li>
+        <li>Drove API standards and initiatives across 12 subteams, establishing consistency for institutional-facing services.</li>
+        <li>Designed and built a novel indexing system for cross-organization financial data.</li>
+        <li>Expanded connectivity options for institutional customers across REST, FIX, and PrivateLink. Automated all certificate lifecycle management, eliminating manual cost and error.</li>
+        <li>Migrated administration workflows from a bespoke solution to a company-wide standard, simultaneously resolving maintenance cost and critical security requirements.</li>
       </ul>
     </div>
       
     <div class="experience">
-      <span class="when">April 2022 to September 2024</span> <span class="company"><a href="https://cloud.google.com/tpu" rel="nofollow">Google</a></span>
-      <span class="title">Software Engineering Lead</span> <span class="position">Cloud TPU</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://cloud.google.com/tpu" rel="nofollow">Google</a> – Cloud TPU</span>
+        <span class="when">April 2022 – September 2024</span>
+      </div>
+      <div class="exp-role">Senior Software Engineer</div>
       <ul>
-        <li>Lead a team of 9 engineers to provision TPU AI accelerators for external and internal Cloud customers.</li>
-        <li>Mentored new team members, owned project priorities, and reviewed design and code for best practices and maintainability.</li>
-        <li>Partnered with compute, runtime, and product teams and internal customers to satisfy functional requirements for external product launches.</li>
-        <li>Created a novel transpilation framework in Golang for long running asynchronous provisioning operations. With half the lines of code and less error-prone manual release management, this significantly accelerated feature development and eliminated backward compatibility errors.</li>
+        <li>Led a team of 9 engineers building provisioning infrastructure for TPU AI accelerators across dozens of clusters of ~1,000 nodes each, globally distributed across 4 continents, serving hundreds of customers including every major AI lab.</li>
+        <li>Partnered with compute, runtime, and product teams to deliver functional requirements for external product launches, including new TPU generations.</li>
+        <li>Identified that the existing framework for long-running asynchronous provisioning operations was a systemic drag on development velocity, requiring extensive manual change management and causing frequent backward compatibility errors. Made the case for a replacement to the original framework's authors, who became meaningful collaborators. The resulting transpilation framework in Go doubled development productivity in half the code.</li>
+        <li>Owned project priorities, mentored new team members, and reviewed design and code across the team.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <span class="when">October 2019 to April 2022</span> <span class="company"><a href="https://about.facebook.com/" rel="nofollow">Facebook</a></span>
-      <span class="title">Software Engineer</span> <span class="position">ML Hub</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://www.meta.com/about" rel="nofollow">Meta</a> – ML Hub</span>
+        <span class="when">October 2019 – April 2022</span>
+      </div>
+      <div class="exp-role">Senior Software Engineer</div>
       <ul>
-        <li>Refactored the shared AI model metadata store, unifying disparate ML training and serving frameworks. Performed and orchestrated complex multi-team data and schema migrations, backfills, indexing, and product changes.</li>
-        <li>Led the initiative to develop a common API to drive action on ML model serving such as deployment, canarying, and rollback, simplifying deployments and improving model iteration velocity.</li>        
-        <li>Developed end to end monitoring in Hub for ML models, including UI surface, out of the box metrics, and APIs for declarative metrics.</li>
-        <li>Led organization-wide hiring efforts by developing process and priming a backlog of onboarding tasks for new and prospective team members.</li>
+        <li>Refactored the shared ML model metadata store, unifying disparate training and serving frameworks into a single source of truth for thousands of models across trust and safety, revenue, and product organizations. Orchestrated complex multi-team data migrations, schema changes, backfills, and indexing.</li>
+        <li>Led development of a common model lifecycle API for deployment, canarying, and rollback across continuously deployed models, reducing deployment complexity and improving model iteration velocity organization-wide.</li>
+        <li>Built end-to-end model monitoring: UI surfaces, out-of-the-box metrics, and declarative metrics APIs, giving ML engineers visibility into model health from training through production.</li>
+        <li>Led organization-wide hiring efforts, developing process and onboarding pipelines for new and prospective team members.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <span class="when">October 2013 to October 2019</span> <span class="company"><a href="https://about.google/" rel="nofollow">Google</a></span>
-      <span class="title">Software Engineer</span> <span class="position">Secure LDAP</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://about.google/" rel="nofollow">Google</a> – <a href="https://support.google.com/a/answer/9048516?hl=en" rel="nofollow">Secure LDAP</a></span>
+        <span class="when">October 2013 – October 2019</span>
+      </div>
+      <div class="exp-role">Senior Software Engineer</div>
       <ul>
-        <li>Founded, developed, and launched Google Secure LDAP, a new Lightweight Directory Access Protocol server built on top of Google Cloud Identity.</li>
-        <li>Grew and lead the team from zero to 6 engineers as well as PM, QA, and UX roles.</li>
-        <li>Coordinated across organizations, solving organizational and technical roadblocks.</li>
-        <li>Partnered with customers before and after launch to identify use cases, address product gaps, and optimize performance.</li>
-        <li>Drove launch process and reviews, including security, quality, and production.</li>
-        <li>Successfully launched the product with industry partners to thousands of companies in the first three months and tens of thousands of companies as of 2023.</li>
-        <li>Developed various other enterprise and consumer-facing identity systems for Google and G Suite.</li>
-        <li>Technologies used include Java, Golang, Spanner, Protocol Buffers, Stubby, Guice, Flume, and many Google-internal frameworks and systems.</li>
+        <li>Founded, developed, and launched Google Secure LDAP, a managed LDAP service built on Google Cloud Identity.</li>
+        <li>Grew the team from zero to 6 engineers plus PM, QA, and UX. Coordinated across organizations to clear technical and organizational roadblocks.</li>
+        <li>Launched to thousands of companies in the first three months; the product serves tens of thousands of companies as of 2023.</li>
+        <li>Partnered directly with customers before and after launch to identify use cases, close product gaps, and optimize performance.</li>
+        <li>Drove launch reviews across security, quality, and production readiness.</li>
+        <li>Technologies: Java, Go, Spanner, Protocol Buffers, Stubby, Guice, Flume.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <span class="when">January 2013 to October 2013</span> <span class="company"><a href="https://www.optimizely.com/company/" rel="nofollow">Optimizely</a></span>
-      <span class="title">Software Engineering Lead</span> <span class="position">Analytics Backend</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://www.optimizely.com/company/" rel="nofollow">Optimizely</a> – Analytics Backend</span>
+        <span class="when">January 2013 – October 2013</span>
+      </div>
+      <div class="exp-role">Software Engineering Lead</div>
       <ul>
-        <li>Responsible for development of the analytics backend that powers Optimizely, processing over 2 million events per minute at peak, doubling every 6 months.</li>
-        <li>Responsible for technical leadership of the backend team (6 engineers and growing).</li>
-        <li>Developed a new streaming methodology for analyzing optimization test results.</li>
-        <li>Developed a new methodology for analyzing statistical significance of revenue lift.</li>
-        <li>Implemented, in Node, a scalable streaming analytics backend using HyperLogLog probabilistic counting, a Chord distributed hash table, quorum-based replication, and commutative replicated data structures.</li>
-        <li>Technologies used include Python, MongoDB, Redis, Node, HBase, Java, Google App Engine, and Amazon Web Services (EC2, S3, ELB, Cloud Formation, Route 53).</li>
+        <li>Led the backend team (6 engineers) building the analytics system powering Optimizely, processing over 2 million events per minute at peak and doubling every 6 months.</li>
+        <li>Implemented a streaming analytics backend using HyperLogLog probabilistic counting, a Chord distributed hash table, quorum-based replication, and CRDTs.</li>
+        <li>Developed new streaming methodologies for analyzing A/B test results and statistical significance of revenue lift.</li>
+        <li>Technologies: Python, Node, MongoDB, Redis, HBase, Java, AWS.</li>
       </ul>
     </div>
     
     <div class="experience">
-      <span class="when">October 2009 to January 2013</span> <span class="company"><a href="https://www.tripit.com/" rel="nofollow">TripIt</a></span>
-      <span class="title">Lead Software Architect</span> <span class="position">Backend and Web</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://www.tripit.com/" rel="nofollow">TripIt</a> – Backend and Web</span>
+        <span class="when">October 2009 – January 2013</span>
+      </div>
+      <div class="exp-role">Lead Software Architect</div>
       <ul>
-        <li>Responsible for development of backend, APIs, and web application features.</li>
-        <li>Responsible for technical leadership of a team of 8 engineers.</li>
-        <li>Integrated with Sabre flight booking system for price monitoring.</li>
-        <li>Invented an algorithm to deduplicate travel itinerary data.</li>
-        <li>Developed Google Apps integration, OpenID integration with various providers, Zendesk helpdesk integration, and Payflow payment integration.</li>
-        <li>Created API bindings in several languages, including Ruby, C#, Perl, and Erlang.</li>
-        <li>Worked within and across teams to define technical solutions to business problems.</li>
-        <li>Technologies used include PHP, Python, Ruby, C#, Java, Erlang, MySQL, Memcache, Redis, OpenID, and OAuth</li>
+        <li>Led a team of 8 engineers responsible for backend, APIs, and web application development.</li>
+        <li>Integrated with Sabre flight booking system for real-time price monitoring.</li>
+        <li>Invented and patented an algorithm to deduplicate travel itinerary data (see Patents below).</li>
+        <li>Developed integrations with Google Apps, OpenID providers, Zendesk, and Payflow payments.</li>
+        <li>Technologies: PHP, Python, Ruby, Java, Erlang, MySQL, Memcache, Redis, OAuth.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <span class="when">May 2009 to October 2009</span> <span class="company"><a href="https://www.hp.com/" rel="nofollow">Hewlett-Packard</a></span>
-      <span class="title">Software Engineer</span> <span class="position">Modular Platform for Server Automation</span>
+      <div class="exp-header">
+        <span class="company-title"><a href="https://www.hpe.com/" rel="nofollow">Hewlett-Packard</a> – <a href="https://docs.microfocus.com/doc/419/24.1/saglobalfilesystemogfs" rel="nofollow">Global File System</a></span>
+        <span class="when">June 2008 – May 2009</span>
+      </div>
+      <div class="exp-role">Software Engineer</div>
       <ul>
-        <li>Founding member of a small team established to develop a new modular platform for server automation.</li>
-        <li>Researched various technologies, developed platform components including database, UI, automated testing frameworks, and modular infrastructure.</li>
-        <li>Technologies used include Java, OSGi (Apache Felix and Eclipse Equinox), Eclipse, Maven, Flex, Jetty, MongoDB, CouchDB, Erlang, and Scala.</li>
+        <li>Principal developer of the Opsware Global File System, providing a single file system view of an entire data center.</li>
+        <li>Solaris kernel module development for the file system driver, including debugging with MDB and DTrace, and post-mortem kernel core analysis.</li>
+        <li>Developed native Ruby, PHP, and Perl bindings for the HP Server Automation API.</li>
       </ul>
     </div>
 
-    <div class="experience">
-      <span class="when">June 2008 to May 2009</span> <span class="company"><a href="http://www.hp.com/" rel="nofollow">Hewlett-Packard</a></span>
-      <span class="title">Software Engineer</span><span class="position">Global File System</span>
-      <ul>
-        <li>Principal developer of the Opsware Global File System, a single file system view of an entire data center.</li>
-        <li>Worked on platform support, including Solaris file system kernel module development, debugging with MDB, including writing plugins to facilitate debugging, instrumentation and debugging with DTrace, and post-mortem Solaris 10 kernel core analysis.</li>
-        <li>Added automated testing support to various components of the global file system, including the Solaris kernel module.</li>
-        <li>Developed native Ruby, PHP, and Perl bindings for the HP Server Automation Unified API.</li>
-      </ul>
-    </div>
+    <h2>Earlier Experience</h2>
+    <div class="earlier-experience">
+      <div class="earlier-entry">
+        <div class="earlier-header">
+          <span class="earlier-role">Hewlett-Packard / Opsware – Software Engineer</span>
+        </div>
+        <div class="earlier-detail">Data center visualization and scanning infrastructure. Developed APIs for application-specific scanning modules. Presented at HP TechCon.</div>
+      </div>
 
-    <div class="experience">
-      <span class="when">July 2007 to June 2008</span><span class="company"><a href="http://www.hp.com/" rel="nofollow">Hewlett-Packard</a></span>
-      <span class="title">Software Engineer</span><span class="position">Service Automation Visualizer</span>
-      <ul>
-        <li>Responsibilities included transferring knowledge to other team members and communicating with the larger communities within HP to identify potential for product integration.
-        </li><li>Took the initiative to develop a public API for extending the data center scanning infrastructure with application-specific modules, and developed the first such modules for scanning Weblogic and Oracle servers.</li>
-        <li>Introduced unit testing into the project and achieved test coverage of the majority of the scanning infrastructure code.</li>
-        <li>Was invited to present technical details of the Service Automation Visualizer at HP TechCon, an annual worldwide interdisciplinary conference of HP technologists. Presented at HP TechCon 2008 in Boston.</li>
-      </ul>
-    </div>
-
-    <div class="experience">
-      <span class="when">April 2006 to July 2007</span><span class="company"><a href="http://www.opsware.com/" rel="nofollow">Opsware</a></span>
-      <span class="title">Software Engineer</span><span class="position">Visual Application Manager</span>
-      <ul>
-        <li>Developer of the scanning infrastructure for Opsware Visual Application Manager (HP Service Automation Visualizer), a data center visualization tool.</li>
-        <li>Responsibilities included:
-          <ul>
-            <li>Developing applications to gather deep system-level detail across a wide variety of platforms, including Linux, Windows, Solaris, AIX, and HP-UX.</li>
-            <li>Developing algorithms to merge and correlate the gathered data into a unified map of the data center.</li>
-            <li>Developing the user interface to visualize the interprocess communication across servers and applications within a data center</li>
-          </ul>
-        </li>
-        <li>Took the initiative to refactor the scanning infrastructure to improve maintainability and enabled the fast pace of future developments for the next two major product releases.</li>
-        <li>Was instrumental in three major product releases, which were ready on time and with zero outstanding high or medium priority bugs.</li>
-        <li>Technologies used include C, C++, Python, Java, XML, XSLT, WMI, Solaris KVM, Solaris Zones, and VMware.</li>
-      </ul>
-    </div>
-
-    <div class="experience">
-      <span class="when">April 2005 to April 2006</span><span class="company"><a href="https://en.wikipedia.org/wiki/Opsware" rel="nofollow">Opsware</a></span>
-      <span class="title">Technical Support Engineer</span>
-      <ul>
-        <li>Responsible for telephone, e-mail, and on-site support of Fortune 500 customers using Opsware Network Automation System (HP Network Automation), and Opsware Server Automation System (HP Server Automation).</li>
-        <li>Responsibilities included finding, reporting and fixing bugs, developing patches, customizations, and content, communicating solutions to customers, and working with customers to implement data center automation tools to solve their business problems.</li>
-        <li>Developed extensions using Python and Perl, and bug fixes in Java, C++ and Python.</li>
-        <li>Was invited to present at the 2006 Opsware Science Fair, an internal conference of technologists. Presented a way to implement the Opsware Global File System portably using NFS.</li>
-      </ul>
-    </div>
-
-    <div class="experience">
-      <span class="when">June 2003 to April 2005</span><span class="company">Isometrix Consulting</span>
-      <span class="title">Proprietor and Consultant</span>
-      <ul>
-        <li>Provided system administration and maintenance support, network design and implementation, and consulting to small and medium sized businesses.</li>
-      </ul>
-    </div>
-
-    <div class="experience">
-      <span class="when">June 2003 to December 2004</span><span class="company"><a href="http://www.unbc.ca/" rel="nofollow">University of Northern British Columbia</a></span>
-      <span class="title">Computer Science Researcher</span>
-      <ul>
-        <li>Worked under an NSERC Undergraduate Student Research Award, two years in a row.</li>
-        <li>Worked in a team to develop a distributed real-time transaction-processing simulator.</li>
-        <li>Developed a distributed MPI deadlock detector. 
-            Presented and published the <a href="http://db.tt/48GKOqmB">paper</a> at IASTED Parallel and Distributed Computing Conference.</li>
-      </ul>
-    </div>
-
-    <div class="experience">
-      <span class="when">June 2001 to August 2002</span><span class="company"><a href="http://www.orion-is.com/" rel="nofollow">Orion Information Systems</a></span>
-      <span class="title">Software Developer</span>
-      <ul>
-        <li>Developed custom applications for widely varying clients, including government and educational institutions.</li>
-        <li>Developed an off-the-shelf time tracking and project management system for engineering firms.</li>
-      </ul>
-    </div>
-
-    <h2>Projects and Patents</h2>
-    <div class="project">
-      <a class="name" href="https://patents.google.com/patent/US9400959B2">Method and system for detecting duplicate travel path information</a>
-      <div class="description">
-        Patent filed 2012 and granted 2016 for a novel sequence alignment technique to efficiently reconcile duplicate and near-duplicate
-        travel path information in itineraries.
+      <div class="earlier-entry">
+        <div class="earlier-header">
+          <span class="earlier-role">University of Northern British Columbia – CS Researcher</span>
+        </div>
+        <div class="earlier-detail">NSERC research award. Developed a distributed MPI deadlock detector; published at IASTED Parallel and Distributed Computing Conference.</div>
       </div>
     </div>
 
+    <h2>Patents and Projects</h2>
     <div class="project">
-      <a class="name" href="https://www.github.com/bollenberger/eventerator">Eventerator</a>
-      <div class="description">
-        Developed an event oriented programming model for PHP with continuations to permit synchronous style code to perform
-        asynchronous I/O. It consists of a reactor-style event loop and a continuation passing style transformation for PHP.
-      </div>
-    </div>
-    
-    <div class="project">
-      <a class="name" href="https://www.github.com/bollenberger/distributed_database">Distributed Database in Erlang</a>
-      <div class="description">
-        Developed a distributed database in Erlang featuring:
-        <ul>
-          <li>An application layer message routing gateway, which can route messages to any node in the network given only a sparse network topology.</li>
-          <li>Three-phase-commit distributed transactions.</li>
-          <li>Sharded data storage and arbitrarily high levels of replication.</li>
-          <li>Self-organizing system based on the Chord distributed hash table algorithm.</li>
-          <li>Distributed hot code deployment.</li>
-          <li>Streaming interface built on top of the application level message gateway.</li>
-        </ul>
-      </div>
+      <a class="name" href="https://patents.google.com/patent/US9400959B2">Method and system for detecting duplicate travel path information</a> –
+      <span class="description">Patent granted 2016. A novel sequence alignment technique to efficiently reconcile duplicate and near-duplicate
+        travel path information in itineraries.</span>
     </div>
 
     <div class="project">
-      <a class="name" href="https://www.github.com/bollenberger/nfs">Versioning File System in Ruby</a>
-      <ul>
-        <li>Developed a file system in pure Ruby as an NFS server, which exports a versioning file system.</li>
-        <li>Supports branching and arbitrary point-in-time views of the file system.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <a class="name" href="https://www.github.com/bollenberger/fpdf">Ruby PDF Generator</a>
-      <ul>
-        <li>Ported and maintain Ruby FPDF (free PDF), a port of the PHP library by the same name.
-      </li></ul>
-    </div>
-    
-    <div class="project">
-      <a class="name" href="https://www.github.com/bollenberger/rpc">Ruby Object Database and Object Remoting Library</a>
-      <ul>
-        <li>Developed an object database in Ruby, using PostgreSQL as a backing store. It provides transparent access to persisted objects and transaction support.</li>
-        <li>Developed an object remoting library in Ruby that provides transparent access to remote objects, including distributed reference counting garbage collection and remote exceptions.</li>
-      </ul>
+      <a class="name" href="https://www.github.com/bollenberger/distributed_database">Distributed Database in Erlang</a> –
+      <span class="description">A self-organizing distributed database featuring Chord-based routing, three-phase-commit transactions, sharded storage with configurable replication, distributed hot code deployment, and a streaming interface.</span>
     </div>
 
     <h2>Education</h2>
     <div class="education">
       <div class="school"><a class="school_name" href="http://www.unbc.ca/" rel="nofollow">University of Northern British Columbia</a>, <span class="city">Prince George, BC, Canada</span></div>
       <div class="degree">Bachelor of Science in Computer Science, Minor in Mathematics</div>
-      <div class="gpa">GPA 4.16 of 4.33</div>
-      <div class="graduation_date">2004</div>
     </div>
   
 </body></html>
